@@ -260,3 +260,7 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
+#hero { margin: 64px 0 32px 0; }
+#hero-title { margin-bottom: 32px; font-family: Arial, sans-serif; font-weight: 900; letter-spacing: -1.6px; }
