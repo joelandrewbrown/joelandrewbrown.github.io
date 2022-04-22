@@ -11,14 +11,38 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+   font-family: 'gothambold';
+   src: url('fonts/gotham-bold-webfont.woff2') format('woff2'),
+        url('fonts/gotham-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'gotham_bookregular';
+   src: url('fonts/gotham-book-webfont.woff2') format('woff2'),
+        url('fonts/gotham-book-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'gotham_bookitalic';
+   src: url('fonts/gotham-bookitalic-webfont.woff2') format('woff2'),
+        url('fonts/gotham-bookitalic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
 html {
   color: #151513;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 body {
-
+  font-family: "gotham_bookregular", Arial, sans-serif;
   background-color: #FFFFF5;
 }
 
@@ -91,6 +115,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   b,
+   strong,
+   .strong {
+       font-weight: normal;
+       font-family: "gothambold", Arial, sans-serif;
+   }
+
+   h1,h2,h3,h4,h5,h6 { font-family: "gothambold", Arial, sans-serif; color: #151513; }
+
+   h1 { letter-spacing: -1px; }
 
 /* ==========================================================================
    Helper classes
@@ -265,7 +300,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
-
-#hero { margin: 64px 0 32px 0; }
-#hero-title { margin-bottom: 32px; font-family: Arial, sans-serif; font-weight: 100; letter-spacing: -.5px; font-size: calc(1rem + 2vw); color: #151513; }
