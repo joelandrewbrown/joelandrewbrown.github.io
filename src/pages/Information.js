@@ -3,53 +3,60 @@ import React from 'react';
 function Information() {
 return (
 <div>
-  <div className="row mb-2">
+
+  <div className="row py-5">
     <div className="col">
-      <h1 class="h4">Experience</h1>
+      <img className="img-fluid mb-3 rounded" src="../images/joel.jpg" alt="Alt" />
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 pt-5 pb-4">
     <div className="col">
-      <span className="fw-semibold"><a href="https://www.deptagency.com/en-us/">DEPT&#174;</a> &#x2022; Senior Product Designer</span>
-      <span className="d-block"><a href="https://www.deptagency.com">deptagency.com</a></span>
+      <h1 className="display-6">Experience</h1>
+    </div>
+  </div>
+
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
+    <div className="col">
+      <span className="fw-semibold"><a className="text-reset" href="https://www.deptagency.com/en-us/">DEPT&#174;</a> &#x2022; Senior Product Designer</span>
+      <span className="d-block"><a className="text-reset" href="https://www.deptagency.com">deptagency.com</a></span>
     </div>
     <div className="col text-end">
       <span>May 17th, 2022 - Current</span>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Sana Benefits &#x2022; Senior Product Designer</span>
-      <span className="d-block"><a href="https://www.sanabenefits.com">sanabenefits.com</a></span>
+      <span className="d-block"><a className="text-reset" href="https://www.sanabenefits.com">sanabenefits.com</a></span>
     </div>
     <div className="col text-end">
       <span>May 17th, 2021 - May 17th 2022</span>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Virgin Pulse &#x2022; UX Manager</span>
-      <span className="d-block"><a href="https://www.virginpulse.com">virginpulse.com</a></span>
+      <span className="d-block"><a className="text-reset" href="https://www.virginpulse.com">virginpulse.com</a></span>
     </div>
     <div className="col text-end">
       <span>April 1st, 2021 - May 16th, 2021</span>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Virgin Pulse &#x2022; Senior UX Designer</span>
-      <span className="d-block"><a href="https://www.virginpulse.com">virginpulse.com</a></span>
+      <span className="d-block"><a className="text-reset" href="https://www.virginpulse.com">virginpulse.com</a></span>
     </div>
     <div className="col text-end">
       <span>January 1st, 2020 - March 31st, 2021</span>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Yaro (acquired by Virgin Pulse) &#x2022; Senior UX Designer</span>
     </div>
@@ -58,7 +65,7 @@ return (
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Zest Health (re-branded as Yaro) &#x2022; Senior Designer</span>
     </div>
@@ -67,22 +74,23 @@ return (
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Paper Tower &#x2022; Senior Designer &amp; Front-end Developer</span>
-      <span className="d-block"><a href="https://www.papertower.com">papertower.com</a></span>
+      <span className="d-block"><a className="text-reset" href="https://www.papertower.com">papertower.com</a></span>
     </div>
     <div className="col text-end">
       <span>2008 - August 7th, 2017</span>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold">Freelance &#x2022; Art Director &amp; Front-end Developer</span>
     </div>
   </div>
-  <div className="row">
+
+  <div className="row col-lg-10 offset-lg-1 pt-3 pb-5">
     <div className="col">
       <span className="fw-semibold">515 Group &#x2022; Creative Director</span>
     </div>
@@ -91,13 +99,13 @@ return (
     </div>
   </div>
 
-  <div className="row mt-5 mb-2">
+  <div className="row col-lg-10 offset-lg-1 pt-5 pb-4 mt-5">
     <div className="col">
-      <h2 class="h4">Education</h2>
+      <h2 class="display-6">Education</h2>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 border-bottom py-3">
     <div className="col">
       <span className="fw-semibold m-0">The Art Institute of Pittsburgh Online Division</span>
       <span className="d-block">1 Year Diploma &#x2022; Web Design &amp; Development</span>
@@ -107,7 +115,7 @@ return (
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 pt-3 pb-5">
     <div className="col">
       <span className="fw-semibold m-0">Judson University Division of Art &amp; Design</span>
       <span className="d-block">Bachelor of Arts &#x2022; Visual Communication &#x2022; create.judsonu.edu</span>
@@ -117,13 +125,13 @@ return (
     </div>
   </div>
 
-  <div className="row mt-5 mb-2">
+  <div className="row col-lg-10 offset-lg-1 py-5 mt-5">
     <div className="col">
-      <h3 class="h4">Processes, Tools &amp; Technologies</h3>
+      <h3 class="display-6">Processes, Tools &amp; Technologies</h3>
     </div>
   </div>
 
-  <div className="row">
+  <div className="row col-lg-10 offset-lg-1 pb-5">
     <div className="col">
       <ul className="list-group">
         <li className="list-group-item">Pen & Paper</li>

@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import Work from './pages/Work.js';
 import Information from './pages/Information.js';
 import Sana from './projects/Sana.js';
 import VirginPulse from './projects/VirginPulse.js';
 import Yaro from './projects/Yaro.js';
-import HealthApp from './projects/HealthApp.js';
-import styles from './App.scss';
+import YaroApp from './projects/YaroApp.js';
+import Web3App from './projects/Web3App.js';
 import 'bootstrap/dist/js/bootstrap.js';
+import './js/main.js';
+import styles from './App.scss';
 
-function App() {
+const App = () => {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    const htmlElement = document.querySelector('html');
+    htmlElement.setAttribute('data-bs-theme',
+    darkMode ? 'dark' : 'light');
+  };
+
   return (
-    <div className="App">
-      <div className="container">
+    <div className={`App ${darkMode ? 'theme-dark' : 'theme-light'}`}>
+      <div className="custom-container">
         <div className="navigation row py-5">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-              <Link className="navbar-brand" to={'/'}>Joel Andrew Brown</Link>
+              <Link className="navbar-brand fw-bold fs-2 text-reset" to={'/'}>Joel Andrew Brown</Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -27,6 +39,11 @@ function App() {
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to={'/information'}>Info</Link>
+                  </li>
+                  <li className="nav-item">
+                    <button className="nav-link" onClick={toggleTheme}>
+                      {darkMode ? <i className='bi bi-moon-fill'></i> : <i className='bi bi-sun-fill'></i>}
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -39,7 +56,8 @@ function App() {
           <Route path="/work/sana-benefits" element={<Sana />} />
           <Route path="/work/yaro" element={<Yaro />} />
           <Route path="/work/virgin-pulse" element={<VirginPulse />} />
-          <Route path="/work/white-label-health-insurance-app" element={<HealthApp />} />
+          <Route path="/work/yaro-app" element={<YaroApp />} />
+          <Route path="/work/web3-app" element={<Web3App />} />
         </Routes>
       </div>
     </div>

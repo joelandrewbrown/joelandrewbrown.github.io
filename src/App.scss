@@ -4,20 +4,23 @@
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 
 // Default variable overrides
-
-$body-color:                              $gray-800;
+$grid-gutter-width:                       3rem;
+$font-size-base:                          20px;
+$line-height-base:                        30px;
 $primary:                                 $primary;
-$link-color:                              $red;
 $link-decoration:                         none;
 $link-shade-percentage:                   20%;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage);
-$thumbnail-padding:                       .25rem;
+$thumbnail-padding:                       0;
+$thumbnail-border-width:                  0;
+$thumbnail-border-radius:                 1rem;
 $navbar-toggler-padding-y:                0;
 $navbar-toggler-padding-x:                0;
 $nav-link-font-size:                      $font-size-lg;
@@ -25,6 +28,7 @@ $nav-link-font-weight:                    $font-weight-medium;
 $navbar-nav-link-padding-x:               1.125rem;
 $focus-ring-width:                        .125rem;
 $focus-ring-opacity:                      .125;
+
 
 // Required
 @import "../node_modules/bootstrap/scss/images";
@@ -34,6 +38,7 @@ $focus-ring-opacity:                      .125;
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/grid";
 
 // Optional Bootstrap components here
 @import "../node_modules/bootstrap/scss/reboot";
@@ -44,4 +49,18 @@ $focus-ring-opacity:                      .125;
 
 .navbar-toggler {
   border: 0;
+}
+
+// Source mixin
+@mixin make-container($padding-x: 6em) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
 }
