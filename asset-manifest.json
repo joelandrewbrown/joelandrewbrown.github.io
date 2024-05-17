@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/git@github.com:joelandrewbrown/portfolio.git/static/css/main.125b33a3.css",
-    "main.js": "/git@github.com:joelandrewbrown/portfolio.git/static/js/main.7ed38444.js",
-    "static/media/bootstrap-icons.woff?": "/git@github.com:joelandrewbrown/portfolio.git/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/git@github.com:joelandrewbrown/portfolio.git/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/git@github.com:joelandrewbrown/portfolio.git/index.html",
-    "main.125b33a3.css.map": "/git@github.com:joelandrewbrown/portfolio.git/static/css/main.125b33a3.css.map",
-    "main.7ed38444.js.map": "/git@github.com:joelandrewbrown/portfolio.git/static/js/main.7ed38444.js.map"
+    "main.css": "/portfolio/static/css/main.21e4ccda.css",
+    "main.js": "/portfolio/static/js/main.7ed38444.js",
+    "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.21e4ccda.css.map": "/portfolio/static/css/main.21e4ccda.css.map",
+    "main.7ed38444.js.map": "/portfolio/static/js/main.7ed38444.js.map"
   },
   "entrypoints": [
-    "static/css/main.125b33a3.css",
+    "static/css/main.21e4ccda.css",
     "static/js/main.7ed38444.js"
   ]
 }
