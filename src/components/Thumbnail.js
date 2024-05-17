@@ -9,8 +9,8 @@ return (
         <div className="project-image">
           <img className="img-fluid img-thumbnail mb-4" src={props.image} alt={props.alt} />
         </div>
-        <p className="h2 fw-bold">{props.title}</p>
-        <span class="h5">{props.short_desc}</span>
+        <p className="h2">{props.title}</p>
+        <span class="h4 fw-normal">{props.short_desc}</span>
       </Link>
     </div>
   </div>

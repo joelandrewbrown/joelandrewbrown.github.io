@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import Work from './pages/Work.js';
+import Projects from './pages/Projects.js';
 import Information from './pages/Information.js';
 import Sana from './projects/Sana.js';
 import VirginPulse from './projects/VirginPulse.js';
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className={`App ${darkMode ? 'theme-dark' : 'theme-light'}`}>
-      <div className="custom-container">
+      <div className="container-xxl">
         <div className="navigation row py-5">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
@@ -35,7 +35,7 @@ const App = () => {
               <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul className="navbar-nav mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <Link className="nav-link" to={'/'}>Work</Link>
+                    <Link className="nav-link" to={'/'}>Projects</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to={'/information'}>Info</Link>
@@ -51,13 +51,13 @@ const App = () => {
           </nav>
         </div>
         <Routes>
-          <Route exact path="/" element={<Work />} />
+          <Route exact path="/" element={<Projects />} />
           <Route path="/information" element={<Information />} />
-          <Route path="/work/sana-benefits" element={<Sana />} />
-          <Route path="/work/yaro" element={<Yaro />} />
-          <Route path="/work/virgin-pulse" element={<VirginPulse />} />
-          <Route path="/work/yaro-app" element={<YaroApp />} />
-          <Route path="/work/web3-app" element={<Web3App />} />
+          <Route path="/projects/sana-benefits" element={<Sana />} />
+          <Route path="/projects/yaro" element={<Yaro />} />
+          <Route path="/projects/virgin-pulse" element={<VirginPulse />} />
+          <Route path="/projects/yaro-app" element={<YaroApp />} />
+          <Route path="/projects/web3-app" element={<Web3App />} />
         </Routes>
       </div>
     </div>
